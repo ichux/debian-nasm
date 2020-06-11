@@ -1,0 +1,13 @@
+version: '3.7'
+
+volumes:
+  debian_nasm_codes:
+    external: true
+
+services:
+  nasm_compiler:
+    build: .
+    volumes:
+      - debian_nasm_codes:/source:consistent
+    command:
+      - /bin/bash

@@ -6,7 +6,9 @@ volumes:
 
 services:
   nasm_compiler:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - debian_nasm_codes:/source:consistent
     command:

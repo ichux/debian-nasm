@@ -20,7 +20,8 @@ binutils binutils-common binutils-x86-64-linux-gnu build-essential bzip2 cpp
   xdg-user-dirs xxd xz-utils
 ```
 ## How to use
-1. Download the [accompanying files](https://gist.github.com/ichux/713bad470794872b463060ed50f81e42/archive/06b53c6591db0ad8e8217560deaceff34dd11e76.zip)
+1. Locate and download the [accompanying files](https://gist.github.com/ichux/713bad470794872b463060ed50f81e42)
+by clicking on the `Download ZIP` section
 2. Extract the `.zip`, rename it and `cd` into that directory through your terminal
 3. Run `make volume id=$PWD/source`
 4. Run `make pull`

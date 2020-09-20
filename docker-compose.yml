@@ -1,15 +1,15 @@
 version: '3.7'
 
-volumes:
-  debian_nasm_codes:
-    external: true
 
 services:
-  nasm_compiler:
+  nasm:
+    # keeps the container running
+    tty: true
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: nasm
     volumes:
-      - debian_nasm_codes:/source:consistent
+      - ./:/nasm
     command:
       - /bin/bash

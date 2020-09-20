@@ -5,7 +5,7 @@ help:
 	@echo "  dis			disassemble a program"
 
 clean:
-	@rm *.o *.out
+	@rm -rf *.o *.out
 
 clr:
 	@nasm -felf64 $(i).asm -o $(i).o && ld -o $(i).out $(i).o

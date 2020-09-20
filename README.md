@@ -28,3 +28,4 @@ by clicking on the `Download ZIP` section
 4. Run `nasm -felf64 welcome.asm -o welcome.o && ld -o welcome.out welcome.o`
 5. Run `chmod +x welcome.out && ./welcome.out`
 6. You should see your desired output printed on your terminal
+7. OR, download the [files here](https://github.com/ichux/debian-nasm/tree/master/source) and follow the [README.md](https://github.com/ichux/debian-nasm/blob/master/source/README.md)

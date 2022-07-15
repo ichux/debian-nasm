@@ -1,8 +1,8 @@
 help:
 	@echo "\`make <target>\` where <target> is one of"
 	@echo "  clean			clean directory"
-	@echo "  clr			compile, link and run specified file"
-	@echo "  dis			disassemble a program"
+	@echo "  clr			compile, link and run specified file e.g. make clr i=msg"
+	@echo "  dis			disassemble a program e.g. make dis i=msg"
 
 clean:
 	@rm -rf *.o *.out

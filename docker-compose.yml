@@ -1,13 +1,13 @@
 version: '3.7'
 
 services:
-  nasm:
+  sv_nasm:
     # keeps the container running
     tty: true
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: nasm
+    container_name: ct_nasm
     volumes:
       - ./:/nasm
     command:

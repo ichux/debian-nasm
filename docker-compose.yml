@@ -1,14 +1,22 @@
 version: '3.7'
 
 services:
-  sv_nasm:
-    # keeps the container running
+  if-wu-nasm:
     tty: true
     build:
       context: .
-      dockerfile: Dockerfile
-    container_name: ct_nasm
+      dockerfile: wu.Dockerfile
+    container_name: cf-wu-nasm
+    working_dir: /home/nasm
     volumes:
-      - ./:/nasm
-    command:
-      - /bin/bash
+      - ./source:/home/nasm:z,ro
+
+  if-no-nasm:
+    tty: true
+    build:
+      context: .
+      dockerfile: no.Dockerfile
+    container_name: cf-no-nasm
+    working_dir: /home/nasm
+    volumes:
+      - ./source:/home/nasm

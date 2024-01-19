@@ -9,7 +9,7 @@ services:
     container_name: cf-wu-nasm
     working_dir: /home/nasm
     volumes:
-      - ./source:/home/nasm:z,ro
+      - ./source:/home/nasm:z,rw
 
   if-no-nasm:
     tty: true
